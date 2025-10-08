@@ -6,7 +6,7 @@
   <meta name="viewport" content="width = device-width initial-scale=1">
   <title> Git Assignment </title>
   <link rel="stylesheet" href="../styles/common.css" />
-  <link rel="stylesheet" href="../styles/home.css" />
+  <link rel="stylesheet" href="../styles/branches.css" />
   <script src="https://kit.fontawesome.com/20b9975a2f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -104,7 +104,37 @@
           </p>
         </div>
       </section>
-
+      <!-- Git Commands -->
+      <section class="git-commands">
+        <h2>Git Commands for Branching</h2>
+        <ul>
+          <li>
+            <strong>Create a new branch:</strong>
+            <code>git branch branch-name</code>
+          </li>
+          <li>
+            <strong>Switch to a branch:</strong>
+            <code>git checkout branch-name</code>
+          </li>
+          <li>
+            <strong>Create and switch in one step:</strong>
+            <code>git checkout -b branch-name</code>
+          </li>
+          <li>
+            <strong>Merge a branch into main:</strong>
+            <code>git checkout main<br />git merge branch-name</code>
+          </li>
+          <li>
+            <strong>Delete a branch locally:</strong>
+            <code>git branch -d branch-name</code>
+          </li>
+          <li>
+            <strong>Delete a branch remotely:</strong>
+            <code>git push origin --delete branch-name</code>
+          </li>
+        </ul>
+      </section>
+    </div>
 
   <footer class="footer">
     <div class="brand">
