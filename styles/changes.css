@@ -1,0 +1,147 @@
+:root {
+    --spacing: 10px;
+}
+
+.heading {
+    background-color: #f0f8ff;
+    color: #669bbc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1tr minmax(0 1tr);
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Sections 
+section h2 {
+    margin-bottom: 10px;
+    color: #28a745;
+}
+.heading {
+    background-color: #f0f8ff;
+    color: #28a745;
+    padding: 10px 0;
+    text-align: center;
+}
+.heading h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1tr minmax(0 1tr);
+}*/
+
+/* Sections */
+section h2 {
+    margin-bottom: 10px;
+    color: #669bbc;
+}
+
+.intro {
+    margin-bottom: 10px;
+}
+
+.changes-list {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.changes-list .change {
+    padding: var(--spacing);
+    border-radius: 5px;
+    margin-bottom: var(--spacing);
+
+}
+
+.change h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.change p {
+    margin: 3px 10px 3px;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+}
+
+.change code {
+    background-color: rgb(219, 209, 209);
+    color: black;
+    border-radius: 5px;
+    width: 45%;
+    padding: 0.3rem;
+    margin: 0 0.5rem 0.5rem 0;
+    float: inline-start;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+
+}
+
+.change li {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.0rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+span {
+    font-size: small;
+}
+
+/* Quick guide : Add Code Section */
+.add-code {
+    align-content: center;
+    background-color: #fff3f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.add-code ol {
+    /* padding-left: 10px;*/
+}
+
+.add-code li {
+    margin-bottom: 0.3rem;
+    font-style: italic;
+}
+
+.add-code code {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media(max-width: 700px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+}
