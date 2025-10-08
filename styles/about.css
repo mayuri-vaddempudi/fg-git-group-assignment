@@ -4,20 +4,11 @@ main {
   margin: auto;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-}
-
 h1 {
-  text-align: center;
-  color: #667eea;
+  color: #764ba2;
   margin-bottom: 30px;
   font-size: 2.5em;
+  text-align: center;
 }
 
 h2 {
@@ -25,6 +16,22 @@ h2 {
   margin-top: 30px;
   margin-bottom: 20px;
   font-size: 2em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 15px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #764ba2;
+  text-align: center;
 }
 
 .intro {
@@ -38,43 +45,7 @@ h2 {
   margin-bottom: 15px;
   color: #333;
   text-align: justify;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 30px 0;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  border: 2px solid #a3d2ff;
-}
-
-thead {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-th {
-  padding: 15px;
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-td {
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
-}
-
-tbody tr {
-  transition: background 0.3s ease;
-}
-
-tbody tr:hover {
-  background: #f0f0f0;
-}
-
-tbody tr:nth-child(even) {
-  background: #f8f9fa;
+  line-height: 1.8;
 }
 
 .workflow {
@@ -111,26 +82,10 @@ tbody tr:nth-child(even) {
   border-radius: 3px;
 }
 
-.team {
-  padding: 4rem 2rem;
-  background-color: #fafafa;
-  text-align: center;
-  margin-top: 30px;
-}
 .team-section h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #003366;
-}
-.team .container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.team h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #0f172a;
 }
 
 .team-grid {
@@ -193,6 +148,19 @@ tbody tr:nth-child(even) {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  * {
+    word-wrap: break-word;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9em;
+  }
+}
+
 .highlight {
   background: #fff3cd;
 }
