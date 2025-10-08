@@ -24,3 +24,63 @@
     /* overlay for readability */
     z-index: 1;
 }
+
+.git-intro {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.git-intro .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.git-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #669bbc;
+}
+
+.git-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.intro {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.intro .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #669bbc;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.intro ul {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.intro ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #444;
+}
