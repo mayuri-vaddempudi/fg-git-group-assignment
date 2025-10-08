@@ -1,93 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width initial-scale=1" />
+    <title>Git Assignment</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <script
+      src="https://kit.fontawesome.com/20b9975a2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width = device-width initial-scale=1">
-  <title> Git Assignment </title>
-  <link rel="stylesheet" href="../styles/common.css" />
-  <link rel="stylesheet" href="../styles/home.css" />
-  <script src="https://kit.fontawesome.com/20b9975a2f.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="brand">
+          <a href="index.html">
+            <img src="../images/github-logo.png" alt="github-logo" />
+          </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          &#9776;
+          <!-- Hamburger icon -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="changes.html">Changes</a>
+          </li>
+          <li>
+            <a href="branches.html">Branching</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h2>Welcome to Our Project</h2>
+        <p>
+          Our project is dedicated to building creative and impactful solutions
+          using modern web technologies. We believe in teamwork, innovation, and
+          continuous learning. Through this project, we aim to enhance our
+          skills while contributing to the community.
+        </p>
+        <p>
+          This page introduces our team, our mission, and the values that guide
+          our work. We are a group of passionate individuals committed to making
+          a difference. We hope you enjoy learning more about us!
+        </p>
+      </section>
 
-<body>
-  <header class="header">
-    <nav class="navbar">
+      <section class="extras">
+        <h2>Useful Pages & Commands</h2>
+        <table class="pages-table">
+          <thead>
+            <tr>
+              <th>Page Name</th>
+              <th>Developer</th>
+              <th>Page Type</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Home Page</td>
+              <td>Mayuri</td>
+              <td>Home</td>
+              <td>Introduction</td>
+            </tr>
+            <tr>
+              <td>Project Page</td>
+              <td>Anuhya</td>
+              <td>Project</td>
+              <td>GitHub Projects</td>
+            </tr>
+            <tr>
+              <td>Branching Pages</td>
+              <td>Sunitha</td>
+              <td>Branching</td>
+              <td>Branching Strategies</td>
+            </tr>
+            <tr>
+              <td>Changes Page</td>
+              <td>Sowjanya</td>
+              <td>Changes</td>
+              <td>Tracking Changes</td>
+            </tr>
+            <tr>
+              <td>About Us Page</td>
+              <td>Anuhya</td>
+              <td>Information</td>
+              <td>About the Project</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="team">
+        <div class="container">
+          <h2>Meet Our Team</h2>
+          <div class="team-grid">
+            <div class="team-card">
+              <img src="../images/member-1.jpg" alt="Mayuri" />
+              <h3>Mayuri</h3>
+              <p>Email: mayuri@example.com</p>
+              <p>Phone: 987-654-3210</p>
+            </div>
+            <div class="team-card">
+              <img src="../images/member-2.jpg" alt="Anuhya" />
+              <h3>Anuhya</h3>
+              <p>Email: anuhya@example.com</p>
+              <p>Phone: 555-123-4567</p>
+            </div>
+            <div class="team-card">
+              <img src="../images/member-3.jpg" alt="Sowjanya" />
+              <h3>Sowjanya</h3>
+              <p>Email: sowjanya@example.com</p>
+              <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="team-card">
+              <img src="../images/member-4.jpg" alt="Suneetha" />
+              <h3>Suneetha</h3>
+              <p>Email: suneetha@example.com</p>
+              <p>Phone: 987-654-3210</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="brand">
         <a href="index.html">
-          <img src="../images/github-logo.png" alt="github-logo">
+          <img src="../images/github-logo.png" alt="github-logo" />
         </a>
       </div>
-      <div class="hamburger" id="hamburger">
-        &#9776; <!-- Hamburger icon -->
+      <div class="quick_links">
+        <ul>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#">Privecy & Policy</a>
+          </li>
+          <li>
+            <a href="#">Carrers</a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav-links" id="nav-links">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="projects.html">Projects</a>
-        </li>
-        <li>
-          <a href="changes.html">Changes</a>
-        </li>
-        <li>
-          <a href="branches.html">Branching</a>
-        </li>
-        <li>
-          <a href="about.html">About Us</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <div class="social_media">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i>Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://x.com/"
+              ><i class="fa-brands fa-twitter"></i>Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/"
+              ><i class="fa-brands fa-github"></i>GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
 
-
-  <footer class="footer">
-    <div class="brand">
-      <a href="index.html">
-        <img src="../images/github-logo.png" alt="github-logo">
-      </a>
-    </div>
-    <div class="quick_links">
-      <ul>
-        <li>
-          <a href="#">Terms & Conditions</a>
-        </li>
-        <li>
-          <a href="#">Privecy & Policy</a>
-        </li>
-        <li>
-          <a href="#">Carrers</a>
-        </li>
-      </ul>
-    </div>
-    <div class="social_media">
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
-        </li>
-        <li>
-          <a href="https://x.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
-        </li>
-        <li>
-          <a href="https://github.com/"><i class="fa-brands fa-github"></i>GitHub</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
-
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
