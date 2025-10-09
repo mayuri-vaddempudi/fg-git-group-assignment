@@ -113,6 +113,121 @@
             is now ready!
           </div>
         </section>
+        <section>
+          <h2>Git Commands for Local Projects</h2>
+
+          <h3>Creating a Project Locally</h3>
+          <div class="code-block">
+            <code
+              ><span class="comment"># Navigate to your project directory</span>
+              <span class="command">cd</span> /path/to/your/project
+
+              <span class="comment"># Initialize a new Git repository</span>
+              <span class="command">git init</span>
+
+              <span class="comment"># Create a README file</span>
+              <span class="command">echo</span> "# My Project" >> README.md
+
+              <span class="comment"># Add files to staging area</span>
+              <span class="command">git add</span> .
+
+              <span class="comment"># Commit your changes</span>
+              <span class="command">git commit -m</span> "Initial commit"</code
+            >
+          </div>
+
+          <h3>Linking Local Repo to Remote Repo</h3>
+          <div class="code-block">
+            <code
+              ><span class="comment"
+                ># Add remote repository (replace URL with your GitHub repo
+                URL)</span
+              >
+              <span class="command">git remote add origin</span>
+              https://github.com/username/repository.git
+
+              <span class="comment"># Verify the remote was added</span>
+              <span class="command">git remote -v</span>
+
+              <span class="comment"
+                ># Push your code to GitHub (first time)</span
+              >
+              <span class="command">git branch -M main</span>
+              <span class="command">git push -u origin main</span>
+
+              <span class="comment"># For subsequent pushes, simply use:</span>
+              <span class="command">git push</span></code
+            >
+          </div>
+
+          <h3>Common Git Commands</h3>
+          <div class="code-block">
+            <code
+              ><span class="comment"># Check status of your files</span>
+              <span class="command">git status</span>
+
+              <span class="comment"># Pull latest changes from remote</span>
+              <span class="command">git pull</span>
+
+              <span class="comment"># Create a new branch</span>
+              <span class="command">git branch</span> feature-name
+              <span class="command">git checkout</span> feature-name
+              <span class="comment"
+                ># Or create and switch in one command:</span
+              >
+              <span class="command">git checkout -b</span> feature-name</code
+            >
+          </div>
+        </section>
+
+        <section>
+          <h2>How Others Can Contribute</h2>
+
+          <h3>Direct Collaboration (Team Members)</h3>
+          <div class="step">
+            <span class="step-number">1</span>
+            <strong>Add Collaborators:</strong> Go to repository Settings →
+            Collaborators → Add people
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <strong>Team Members Clone:</strong>
+            <div class="code-block">
+              <code
+                ><span class="command">git clone</span>
+                https://github.com/username/repository.git
+                <span class="command">cd</span> repository</code
+              >
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <strong>Create Branch, Make Changes, Push:</strong>
+            <div class="code-block">
+              <code
+                ><span class="command">git checkout -b</span> new-feature
+                <span class="comment"># Make your changes...</span>
+                <span class="command">git add</span> .
+                <span class="command">git commit -m</span> "Add new feature"
+                <span class="command">git push origin</span> new-feature</code
+              >
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong> Best Practices for Contributors:</strong>
+            <ul>
+              <li>Always create a new branch for each feature or fix</li>
+              <li>Write clear, descriptive commit messages</li>
+              <li>
+                Pull latest changes before starting new work:
+                <code>git pull origin main</code>
+              </li>
+              <li>Test your changes before pushing</li>
+              <li>Keep pull requests focused and manageable</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
 
