@@ -1,12 +1,25 @@
 .hero {
-    /*height: 100vh;
-    background: url("../images/hero-bg.png") no-repeat center center/cover;*/
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: end;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.hero-img {
+    flex: 1;
     text-align: center;
-    color: #28a745;
-    /*position: relative;*/
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
 }
 
 .explore {
@@ -21,24 +34,6 @@ a.btn {
     font-size: medium;
 }
 
-.hero-img {
-    width: 55%;
-}
-
-/*.hero-content {
-    z-index: 2;
-}*/
-
-/*.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}*/
 .hero-content {
     padding: 10px 50px;
     color: #774ba2;
@@ -173,4 +168,20 @@ a.btn {
 .team-card p {
     font-size: 0.95rem;
     color: #555;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-top: 20px;
+    }
 }
