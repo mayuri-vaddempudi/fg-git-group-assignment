@@ -1,18 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width = device-width initial-scale=1" />
-    <title>Git Assignment</title>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width initial-scale=1">
+    <title> Git Assignment </title>
     <link rel="stylesheet" href="../styles/common.css" />
     <link rel="stylesheet" href="../styles/changes.css" />
-    <script
-      src="https://kit.fontawesome.com/20b9975a2f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
+    <script src="https://kit.fontawesome.com/20b9975a2f.js" crossorigin="anonymous"></script>
+</head>
+ 
+<body>
     <header class="header">
         <nav class="navbar">
             <div class="brand">
@@ -31,7 +29,7 @@
                     <a href="projects.html">Projects</a>
                 </li>
                 <li>
-                    <a href="changes.html">Changes</a>
+                    <a href="changes.html" class="active">Changes</a>
                 </li>
                 <li>
                     <a href="branches.html">Branching</a>
@@ -47,60 +45,109 @@
     </header>
     <main>
     <div class="container">
-      <section class="intro">
-        <h2>What Are Changes?</h2>
-        <p>
-          In Git, changes represent updates made to files in your repository.
-          Each commit saves a snapshot of your project. Tracking changes helps
-          you understand progress, collaborate with others, and maintain a clean
-          history.
-        </p>
-      </section>
+        <section class="intro">
+            <h2>What Are Changes?</h2>
+            <p>
+                In Git, changes represent updates made to files in your repository.
+                Each commit saves a snapshot of your project. Tracking changes helps
+                you understand progress, collaborate with others, and maintain a clean history.
+            </p>
+        </section>
     </div>
     <div class="container">
-      <section class="changes-list">
-        <h2>Adding code to existing repository</h2>
-        <div class="change">
-          <h3>Cloning:</h3>
-          <p>
-            1. Adding code to your repository starts with cloning that
-            repository. Cloning a repository creates a local copy that you can
-            use to do your work. By keeping this local copy synchronized with
-            the remote repository stored in GitHub, you're able to get the
-            latest changes and push your updates so others can receive them.
-          </p>
-          <code>
-            <ul>
-              <li>git clone repository-url</li>
-              <li>cd repository-name</li>
-            </ul>
-          </code>
-        </div>
-      </section>
+        <section class="changes-list">
+            <h2>Adding code to existing repository</h2>
+            <div class="change">
+                <h3>Cloning: </h3>
+                <p>1. Adding code to your repository starts with cloning that repository. Cloning a repository creates a
+                    local copy that you can use to do your work.
+                    By keeping this local copy synchronized with the remote repository stored in GitHub, you're able to
+                    get the latest changes and push your updates so others can receive them.</p>
+                <code>
+                    <ul>
+                        <li> git clone repository-url </li>
+                        <li> cd repository-name </li>
+                    </ul>
+                </code>
+            </div>
+        </section>
     </div>
     <div class="container">
-      <section class="changes-list">
-        <h2>Staging, Committing & Pushing Changes</h2>
-        <div class="change">
-          <h3>Staging:</h3>
-          <p>
-            1. Staging in Git involves adding new, modified, or deleted files to
-            a staging area before committing them. This allows for flexibility
-            in choosing the files to commit.
-          </p>
-          <p>
-            2. Before staging add new files or Edit existing files in your local
-            working directory.
-          </p>
-          <p>
-            3. Check the status of your repo.This shows which files have been
-            changed, added, or deleted.
-          </p>
-          <code>
+        <section class="changes-list">
+            <h2>Staging, Committing & Pushing Changes</h2>
+            <div class="change">
+                <h3>Staging:</h3>
+                <p>1. Staging in Git involves adding new, modified, or deleted files to a staging area before committing
+                    them. This allows for flexibility in choosing the files to commit.</p>
+                <p>2. Before staging add new files or Edit existing files in your local working directory.</p>
+                <p>3. Check the status of your repo.This shows which files have been changed, added, or deleted.</p>
+                <code>
+                    <ul>
+                        <li> git status </li>
+                        <li> git add .   <span>(stages all files) </span></li>
+                        <li> git add filename   <span>(stage a file) </span></li>
+                    </ul>
+                </code>
+            </div>
+            <div class="change">
+                <h3>Committing:</h3>
+                <p>1. Commit the staged files with a meaningful message.</p>
+                <p>2. Check the status again by running this command: git status</p>
+                <p>3. If all changes have been committed, and there are no untracked files, it should say: nothing to
+                    commit, working tree clean.</p>
+                <code>
+                    <ul>
+                        <li>git commit -m "Comment"</li>
+                    </ul>
+                </code>
+            </div>
+            <div class="change">
+                <h3>Pushing:</h3>
+                <p>1. Pushing meanes sending your commits to the remote repository (ex:GitHub).</p>
+                <p>2. If the tracking information has already been set (when you did your first push, or if you
+                    originally cloned the repo from a remote server) you can use a simpler push command.</p>
+                <p>3. Run either of these commands:</p>
+                <code>
+                    <ul>
+                        <li> git push  </li>
+                        <li> git push origin main </li>
+                    </ul>
+                </code>
+            </div>
+        </section>
+    </div>
+    <div class="quick-guide">
+        <section class="add-code">
+            <h2>Quick Guide</h2>
             <ul>
-              <li>git status</li>
-              <li>git add . <span>(stages all files) </span></li>
-              <li>git add filename <span>(stage a file) </span></li>
+                <li>
+                    Clone repository to local :
+                    <code>git clone repo-url </code>
+                </li>
+                <li>
+                    Change to repository folder :
+                    <code>cd repository name</code>
+                </li>
+                <li>
+                    Check repository status:
+                    <code>git status</code>
+                </li>
+                <li>
+                    Stage changes:
+                    <code>git add filename</code> or <code>git add .</code>
+                </li>
+                <li>
+                    Commit changes:
+                    <code>git commit -m "Commit message"</code>
+                </li>
+                <li>
+                    Push changes to remote:
+                    <code>git push origin branch-name</code>
+                </li>
+                <li>
+                    Verify changes:
+                    <code>git log --oneline</code>
+                </li>
             </ul>
             <a href="gallery.html">Learn More Git Commands</a>
         </section>
@@ -112,15 +159,7 @@
                 <img src="../images/github-logo.png" alt="github-logo">
             </a>
         </div>
-        <div class="change">
-          <h3>Committing:</h3>
-          <p>1. Commit the staged files with a meaningful message.</p>
-          <p>2. Check the status again by running this command: git status</p>
-          <p>
-            3. If all changes have been committed, and there are no untracked
-            files, it should say: nothing to commit, working tree clean.
-          </p>
-          <code>
+        <div class="quick_links">
             <ul>
                 <li>
                     <a href="#">Terms & Conditions</a>
@@ -132,118 +171,34 @@
                     <a href="#">Careers</a>
                 </li>
             </ul>
-          </code>
         </div>
-        <div class="change">
-          <h3>Pushing:</h3>
-          <p>
-            1. Pushing meanes sending your commits to the remote repository
-            (ex:GitHub).
-          </p>
-          <p>
-            2. If the tracking information has already been set (when you did
-            your first push, or if you originally cloned the repo from a remote
-            server) you can use a simpler push command.
-          </p>
-          <p>3. Run either of these commands:</p>
-          <code>
+        <div class="social_media">
             <ul>
-              <li>git push</li>
-              <li>git push origin main</li>
+                <li>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                </li>
+                <li>
+                    <a href="https://x.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                </li>
+                <li>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i>GitHub</a>
+                </li>
             </ul>
-          </code>
         </div>
-      </section>
-    </div>
-    <div class="quick-guide">
-      <section class="add-code">
-        <h2>Quick Guide</h2>
-        <ul>
-          <li>
-            Clone repository to local :
-            <code>git clone repo-url </code>
-          </li>
-          <li>
-            Change to repository folder :
-            <code>cd repository name</code>
-          </li>
-          <li>
-            Check repository status:
-            <code>git status</code>
-          </li>
-          <li>
-            Stage changes:
-            <code>git add filename</code> or <code>git add .</code>
-          </li>
-          <li>
-            Commit changes:
-            <code>git commit -m "Commit message"</code>
-          </li>
-          <li>
-            Push changes to remote:
-            <code>git push origin branch-name</code>
-          </li>
-          <li>
-            Verify changes:
-            <code>git log --oneline</code>
-          </li>
-        </ul>
-        <a href="../pages/gallery.html">Learn More Git Commands</a>
-      </section>
-    </div>
-    <footer class="footer">
-      <div class="brand">
-        <a href="index.html">
-          <img src="../images/github-logo.png" alt="github-logo" />
-        </a>
-      </div>
-      <div class="quick_links">
-        <ul>
-          <li>
-            <a href="#">Terms & Conditions</a>
-          </li>
-          <li>
-            <a href="#">Privecy & Policy</a>
-          </li>
-          <li>
-            <a href="#">Carrers</a>
-          </li>
-        </ul>
-      </div>
-      <div class="social_media">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook"></i>Facebook</a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/"
-              ><i class="fa-brands fa-instagram"></i>Instagram</a
-            >
-          </li>
-          <li>
-            <a href="https://x.com/"
-              ><i class="fa-brands fa-twitter"></i>Twitter</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/"
-              ><i class="fa-brands fa-github"></i>GitHub</a
-            >
-          </li>
-        </ul>
-      </div>
     </footer>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("nav-links");
-
-        hamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+ 
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
         });
-      });
     </script>
-  </body>
+</body>
+ 
 </html>
