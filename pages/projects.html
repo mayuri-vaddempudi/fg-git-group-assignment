@@ -171,6 +171,13 @@
               <span class="comment"
                 ># Or create and switch in one command:</span
               >
+              <span class="command">git checkout -b</span> feature-name</code
+            >
+          </div>
+        </section>
+        <!--how-others-can-contribute-->
+        <section>
+          <h2>How Others Can Contribute🤝</h2>
               <span class="command">git checkout -b</span> feature-name</code>
         </div>
 
@@ -193,29 +200,32 @@
           <strong>Create Branch:</strong>git checkout -b new-feature
         </div>
 
-        <div class="step">
-          <span class="step-number">4</span>
-          <strong>Create changes:</strong>git add . #make your changes
-        </div>
-        <div class="step">
-          <span class="step-number">5</span>
-          <strong>Create Commit:</strong>git commit -m:"Add new feature"
-        </div>
-        <div class="step">
-          <span class="step-number">6</span>
-          <strong>Create push:</strong>git push origin new-feature
-        </div>
+          <div class="step">
+            <span class="step-number">4</span>
+            <strong>Create changes:</strong>git add . #make your changes
+          </div>
+          <div class="step">
+            <span class="step-number">5</span>
+            <strong>Create Commit:</strong>git commit -m:"Add new feature"
+          </div>
+          <div class="step">
+            <span class="step-number">6</span>
+            <strong>Create push:</strong>git push origin new-feature
+          </div>
+          <!--open-source-contribution-->
+          <h2>🔄 Complete Project Workflow</h2>
+          <div class="step">
+            <p>
+              Here’s a concise workflow to create a project locally, link it to
+              a remote repository on GitHub, and manage future updates:
+            </p>
+            <div class="code-block">
+              <span class="comment"># 1. Create a new project folder</span>
+              <span class="command">mkdir my-project</span>
+              <span class="command">cd my-project</span>
 
-        <h2>🔄 Complete Project Workflow</h2>
-        <div class="step">
-          <p>
-            Here’s a concise workflow to create a project locally, link it to
-            a remote repository on GitHub, and manage future updates:
-          </p>
-          <div class="code-block">
-            <span class="comment"># 1. Create a new project folder</span>
-            <span class="command">mkdir my-project</span>
-            <span class="command">cd my-project</span>
+              <span class="comment"># 2. Initialize Git</span>
+              <span class="command">git init</span>
 
             <span class="comment"># 2. Initialize Git</span>
             <span class="command">git init</span>
@@ -232,76 +242,82 @@
             <span class="command">git remote add origin
               https://github.com/username/my-project.git</span>
 
-            <span class="comment"># 7. Push to GitHub</span>
-            <span class="command">git push -u origin main</span>
-
-            <span class="comment"># 8. For future updates:</span>
-            <span class="command">git add .</span>
-            <span class="command">git commit -m "Update description"</span>
-            <span class="command">git push</span>
+              <span class="comment"># 8. For future updates:</span>
+              <span class="command">git add .</span>
+              <span class="command">git commit -m "Update description"</span>
+              <span class="command">git push</span>
+            </div>
+          </div>
+        </section>
+        <!--best-practices-for-contributors-->
+        <section>
+          <div class="info-box">
+            <strong> Best Practices for Contributors:</strong>
+            <ul>
+              <li>Always create a new branch for each feature or fix</li>
+              <li>Write clear, descriptive commit messages</li>
+              <li>
+                Pull latest changes before starting new work:
+                <code>git pull origin main</code>
+              </li>
+              <li>Test your changes before pushing</li>
+              <li>Keep pull requests focused and manageable</li>
+            </ul>
           </div>
         </div>
 
-        <div class="info-box">
-          <strong> Best Practices for Contributors:</strong>
-          <ul>
-            <li>Always create a new branch for each feature or fix</li>
-            <li>Write clear, descriptive commit messages</li>
-            <li>
-              Pull latest changes before starting new work:
-              <code>git pull origin main</code>
-            </li>
-            <li>Test your changes before pushing</li>
-            <li>Keep pull requests focused and manageable</li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </main>
+    <footer class="footer">
+      <div class="brand">
+        <a href="index.html">
+          <img src="../images/github-logo.png" alt="github-logo" />
+        </a>
+      </div>
+      <div class="quick_links">
+        <ul>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#">Privacy & Policy</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i>Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://x.com/"
+              ><i class="fa-brands fa-twitter"></i>Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/"
+              ><i class="fa-brands fa-github"></i>GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
 
-  <footer class="footer">
-    <div class="brand">
-      <a href="index.html">
-        <img src="../images/github-logo.png" alt="github-logo" />
-      </a>
-    </div>
-    <div class="quick_links">
-      <ul>
-        <li>
-          <a href="#">Terms & Conditions</a>
-        </li>
-        <li>
-          <a href="#">Privacy & Policy</a>
-        </li>
-        <li>
-          <a href="#">Careers</a>
-        </li>
-      </ul>
-    </div>
-    <div class="social_media">
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
-        </li>
-        <li>
-          <a href="https://x.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
-        </li>
-        <li>
-          <a href="https://github.com/"><i class="fa-brands fa-github"></i>GitHub</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("nav-links");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
       });
     });
   </script>
