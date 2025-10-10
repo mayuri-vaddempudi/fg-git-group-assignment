@@ -96,6 +96,9 @@ Suneetha – Branches page
 
 Sowjanya – Changes page
 
+Suneetha & Sowjanya - Gallery page
+
+
 🧑‍💻 My Contribution (Suneetha Siddabathuni)
 
 ## 🌿 Git Branching
