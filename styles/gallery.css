@@ -3,6 +3,7 @@ main {
   max-width: 1000px;
   margin: auto;
 }
+
 .section {
   margin-bottom: 30px;
 }
@@ -69,10 +70,12 @@ main {
 .tip li {
   margin-bottom: 10px;
 }
+
 a {
   font-style: normal;
   font-weight: 800;
 }
+
 a:hover {
   color: #667eea;
 }
