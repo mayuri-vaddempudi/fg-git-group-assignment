@@ -1,94 +1,61 @@
 :root {
     --spacing: 10px;
+    --heading-color: #2d9ce0;
+    --code-color: rgb(226, 236, 238);
 }
-
+body {
+    display: flex;
+    flex-direction: column;
+}
 .heading {
     background-color: #f0f8ff;
-    color: #669bbc;
+    color: var(--heading-color);
     padding: 20px 0;
     text-align: center;
 }
-
 .heading h1 {
     margin: 0;
     font-size: 2rem;
 }
-
 .container {
-    display: grid;
-    grid-template-columns: 1tr minmax(0 1tr);
+    display: flex;
+    flex-direction:column;
     width: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
     background: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    border-bottom: #29627e;
 }
-
-/* Sections 
-section h2 {
-    margin-bottom: 10px;
-    color: #28a745;
-}
-.heading {
-    background-color: #f0f8ff;
-    color: #28a745;
-    padding: 10px 0;
-    text-align: center;
-}
-.heading h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-.container {
-    width: 70%;
-    margin: 20px auto;
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1tr minmax(0 1tr);
-}*/
-
 /* Sections */
 section h2 {
-    margin-bottom: 10px;
-    color: #669bbc;
+    margin-bottom: var(--spacing);
+    color: var(--heading-color)
 }
-
 .intro {
     margin-bottom: 10px;
 }
-
 .changes-list {
     display: flex;
     flex-direction: column;
-
-
 }
-
 .changes-list .change {
     padding: var(--spacing);
     border-radius: 5px;
     margin-bottom: var(--spacing);
-
 }
-
 .change h3 {
     margin: 0 0 5px 0;
     font-size: 1.2rem;
 }
-
 .change p {
     margin: 3px 10px 3px;
     font-size: 0.95rem;
     line-height: 1.4rem;
 }
-
 .change code {
-    background-color: rgb(219, 209, 209);
+    background-color: var(--code-color);
     color: black;
     border-radius: 5px;
     width: 45%;
@@ -96,10 +63,8 @@ section h2 {
     margin: 0 0.5rem 0.5rem 0;
     float: inline-start;
     box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-
+    font-style: italic;   
 }
-
 .change li {
     font-family: 'Segoe UI', sans-serif;
     font-size: 1.0rem;
@@ -112,23 +77,30 @@ span {
 }
 
 /* Quick guide : Add Code Section */
+.quick-guide {
+    display: flex;
+    padding: var(--spacing);
+    margin: auto auto 20px auto;
+    flex-direction:column;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(163, 179, 193, 0.1);
+}
 .add-code {
-    align-content: center;
-    background-color: #fff3f0;
-    padding: 10px;
+    align-self: center;
+    padding: var(--spacing);
     border-radius: 10px;
     margin-top: 10px;
+    background-color: rgb(226, 236, 238);
 }
-
-.add-code ol {
-    /* padding-left: 10px;*/
+.add-code h2 {
+    text-align: center;
+     color: #0d425d;
 }
-
 .add-code li {
     margin-bottom: 0.3rem;
     font-style: italic;
 }
-
 .add-code code {
     padding: 2px 6px;
     border-radius: 4px;
