@@ -3,6 +3,7 @@ main {
   max-width: 1000px;
   margin: auto;
 }
+
 .content {
   padding: 40px 30px;
 }
@@ -104,6 +105,7 @@ li {
   margin-bottom: 15px;
   font-size: 1.2em;
 }
+
 .code-block {
   background: #282c34;
   color: #abb2bf;
