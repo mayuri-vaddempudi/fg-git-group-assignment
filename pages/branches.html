@@ -1,45 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width initial-scale=1" />
+    <title>Git Assignment</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/branches.css" />
+    <script
+      src="https://kit.fontawesome.com/20b9975a2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width = device-width initial-scale=1">
-  <title> Git Assignment </title>
-  <link rel="stylesheet" href="../styles/common.css" />
-  <link rel="stylesheet" href="../styles/branches.css" />
-  <script src="https://kit.fontawesome.com/20b9975a2f.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="brand">
-        <a href="index.html">
-          <img src="../images/github-logo.png" alt="github-logo">
-        </a>
-      </div>
-      <div class="hamburger" id="hamburger">
-        &#9776; <!-- Hamburger icon -->
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="projects.html">Projects</a>
-        </li>
-        <li>
-          <a href="changes.html">Changes</a>
-        </li>
-        <li>
-          <a href="branches.html">Branching</a>
-        </li>
-        <li>
-          <a href="about.html">About Us</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="brand">
+          <a href="index.html">
+            <img src="../images/github-logo.png" alt="github-logo" />
+          </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          &#9776;
+          <!-- Hamburger icon -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="changes.html">Changes</a>
+          </li>
+          <li>
+            <a href="branches.html" class="active">Branching</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="heading">
       <h1>Git Branches</h1>
@@ -134,54 +140,74 @@
           </li>
         </ul>
       </section>
+
+      <div class="game-info-box">
+        <h2>Want to improve your Git skills in a fun and interactive way?</h2>
+        <p>
+          This game lets you practice common Git commands using a visual
+          branching interface. It's perfect for beginners and a great refresher
+          for experienced developers.
+        </p>
+        <p>Click the button below to start playing:</p>
+        <a href="https://learngitbranching.js.org/" target="_blank"
+          >▶️ Play Git Commands Game</a
+        >
+      </div>
     </div>
 
-  <footer class="footer">
-    <div class="brand">
-      <a href="index.html">
-        <img src="../images/github-logo.png" alt="github-logo">
-      </a>
-    </div>
-    <div class="quick_links">
-      <ul>
-        <li>
-          <a href="#">Terms & Conditions</a>
-        </li>
-        <li>
-          <a href="#">Privecy & Policy</a>
-        </li>
-        <li>
-          <a href="#">Carrers</a>
-        </li>
-      </ul>
-    </div>
-    <div class="social_media">
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
-        </li>
-        <li>
-          <a href="https://x.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
-        </li>
-        <li>
-          <a href="https://github.com/"><i class="fa-brands fa-github"></i>GitHub</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
+    <footer class="footer">
+      <div class="brand">
+        <a href="index.html">
+          <img src="../images/github-logo.png" alt="github-logo" />
+        </a>
+      </div>
+      <div class="quick_links">
+        <ul>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#">Privecy & Policy</a>
+          </li>
+          <li>
+            <a href="#">Carrers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i>Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://x.com/"
+              ><i class="fa-brands fa-twitter"></i>Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/"
+              ><i class="fa-brands fa-github"></i>GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

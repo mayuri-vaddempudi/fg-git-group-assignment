@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Git Assignment</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/gallery.css" />
+    <script
+      src="https://kit.fontawesome.com/20b9975a2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="brand">
+          <a href="index.html">
+            <img src="../images/github-logo.png" alt="github-logo" />
+          </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          &#9776;
+          <!-- Hamburger icon -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="changes.html">Changes</a>
+          </li>
+          <li>
+            <a href="branches.html">Branching</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="active">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="section">
+        <h2>📝 Quick Reference Cards</h2>
+        <div class="grid">
+          <div class="card">
+            <h4>Setup & Config</h4>
+            <p>
+              <code>git init</code> - Initialize repo<br />
+              <code>git clone [url]</code> - Clone repo<br />
+              <code>git config</code> - Set config
+            </p>
+          </div>
+          <div class="card">
+            <h4>Basic Commands</h4>
+            <p>
+              <code>git status</code> - Check status<br />
+              <code>git add</code> - Stage changes<br />
+              <code>git commit</code> - Commit changes
+            </p>
+          </div>
+          <div class="card">
+            <h4>Branching</h4>
+            <p>
+              <code>git branch</code> - List branches<br />
+              <code>git checkout</code> - Switch branch<br />
+              <code>git merge</code> - Merge branches
+            </p>
+          </div>
+          <div class="card">
+            <h4>Remote Sync</h4>
+            <p>
+              <code>git push</code> - Push changes<br />
+              <code>git pull</code> - Pull updates<br />
+              <code>git fetch</code> - Fetch changes
+            </p>
+          </div>
+          <div class="card">
+            <h4>Inspection</h4>
+            <p>
+              <code>git log</code> - View history<br />
+              <code>git diff</code> - Show changes<br />
+              <code>git show</code> - Show commit
+            </p>
+          </div>
+          <div class="card">
+            <h4>Undo Changes</h4>
+            <p>
+              <code>git reset</code> - Undo commits<br />
+              <code>git revert</code> - Revert commit<br />
+              <code>git reflog</code> - Undo a Hard Reset
+            </p>
+          </div>
+          <div class="card">
+            <h4>Temporary Commits</h4>
+            <p>
+              <code>git stash</code> - Save your current changes<br />
+              <code>git stash list</code> - List Stashes<br />
+              <code>git stash show </code> - Show Latest Stash<br />
+              <code>git stash apply </code> - Apply Latest Stash<br />
+            </p>
+          </div>
+          <div class="card">
+            <h4>Tagging</h4>
+            <p>
+              <code>git tag tagname</code> - Create a lightweight tag<br />
+              <code>git tag</code> - List tags<br />
+              <code>git show tagname</code> - Show tag details
+            </p>
+          </div>
+        </div>
+        <div class="tip">
+          <h4>Tip:</h4>
+          <code>git cherry-pick commit-hash</code>
+          <ul>
+            <li>
+              Cherry picking is the act of picking a commit from a branch and
+              applying it to another
+            </li>
+            <li>
+              git cherry-pick can be useful for undoing changes. For example,
+              say a commit is accidently made to the wrong branch. You can
+              switch to the correct branch and cherry-pick the commit to where
+              it should belong.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="brand">
+        <a href="index.html">
+          <img src="../images/github-logo.png" alt="github-logo" />
+        </a>
+      </div>
+      <div class="quick_links">
+        <ul>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#">Privecy & Policy</a>
+          </li>
+          <li>
+            <a href="#">Carrers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i>Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://x.com/"
+              ><i class="fa-brands fa-twitter"></i>Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/"
+              ><i class="fa-brands fa-github"></i>GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

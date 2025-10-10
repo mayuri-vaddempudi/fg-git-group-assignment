@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width initial-scale=1">
     <title> Git Assignment </title>
     <link rel="stylesheet" href="../styles/common.css" />
-    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/changes.css" />
     <script src="https://kit.fontawesome.com/20b9975a2f.js" crossorigin="anonymous"></script>
 </head>
-
+ 
 <body>
     <header class="header">
         <nav class="navbar">
@@ -29,7 +29,7 @@
                     <a href="projects.html">Projects</a>
                 </li>
                 <li>
-                    <a href="changes.html">Changes</a>
+                    <a href="changes.html" class="active">Changes</a>
                 </li>
                 <li>
                     <a href="branches.html">Branching</a>
@@ -37,9 +37,13 @@
                 <li>
                     <a href="about.html">About Us</a>
                 </li>
+                <li>
+                    <a href="/gallery.html">Gallery</a>
+                </li>
             </ul>
         </nav>
     </header>
+    <main>
     <div class="container">
         <section class="intro">
             <h2>What Are Changes?</h2>
@@ -112,7 +116,43 @@
             </div>
         </section>
     </div>
-
+    <div class="quick-guide">
+        <section class="add-code">
+            <h2>Quick Guide</h2>
+            <ul>
+                <li>
+                    Clone repository to local :
+                    <code>git clone repo-url </code>
+                </li>
+                <li>
+                    Change to repository folder :
+                    <code>cd repository name</code>
+                </li>
+                <li>
+                    Check repository status:
+                    <code>git status</code>
+                </li>
+                <li>
+                    Stage changes:
+                    <code>git add filename</code> or <code>git add .</code>
+                </li>
+                <li>
+                    Commit changes:
+                    <code>git commit -m "Commit message"</code>
+                </li>
+                <li>
+                    Push changes to remote:
+                    <code>git push origin branch-name</code>
+                </li>
+                <li>
+                    Verify changes:
+                    <code>git log --oneline</code>
+                </li>
+            </ul>
+            <a href="gallery.html">Learn More Git Commands</a>
+        </section>
+    </div>
+    </main>
     <footer class="footer">
         <div class="brand">
             <a href="index.html">
@@ -125,10 +165,10 @@
                     <a href="#">Terms & Conditions</a>
                 </li>
                 <li>
-                    <a href="#">Privecy & Policy</a>
+                    <a href="#">Privacy & Policy</a>
                 </li>
                 <li>
-                    <a href="#">Carrers</a>
+                    <a href="#">Careers</a>
                 </li>
             </ul>
         </div>
@@ -153,12 +193,12 @@
         document.addEventListener('DOMContentLoaded', () => {
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
-
+ 
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
         });
     </script>
 </body>
-
+ 
 </html>

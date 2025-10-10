@@ -1,0 +1,81 @@
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.command {
+  color: #98c379;
+}
+
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.card h4 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.note {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.note strong {
+  color: #d8c081;
+}
+
+.tip {
+  margin: 10px;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 5px;
+  border-left: 4px solid #667eea;
+}
+
+.tip h4 {
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.tip code {
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+}
+
+.tip li {
+  margin-bottom: 10px;
+}
+
+a {
+  font-style: normal;
+  font-weight: 800;
+}
+
+a:hover {
+  color: #667eea;
+}
