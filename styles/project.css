@@ -26,8 +26,98 @@ h3 {
 
 .info-box {
   background: #f0f9ff;
-  border-left: 4px solid #3b82f6;
   padding: 20px;
   margin: 20px 0;
   border-radius: 5px;
+}
+
+.step {
+  background: #f8fafc;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border-left: 4px solid #10b981;
+}
+
+.step-number {
+  display: inline-block;
+  background: #10b981;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.code-block {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.code-block code {
+  display: block;
+  white-space: pre;
+}
+
+.command {
+  color: #34d399;
+  font-weight: bold;
+}
+
+.comment {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+ul {
+  margin: 15px 0 15px 30px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.highlight {
+  background: #fef3c7;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.contribution-box {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.contribution-box h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+.code-block {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.code-block code {
+  color: #61dafb;
 }
