@@ -104,3 +104,34 @@ The project includes the following pages:</p>
   <li>CSS</li>
   <li>Responsive Design</li>
 </ul>
+
+My contribution (Sowjanya Gangisetty)
+
+This project is a simple webpage that explains the basic Git workflow with examples of commonly used commands:
+- **Cloning** a repository  
+- **modify files** add or mofify the files.
+- **Staging** files  
+- **Committing** changes  
+- **Pushing** to a remote repository  
+
+It is designed to help beginners quickly understand and practice Git.
+🤝 Contribution
+- Created Changes page and styled it.
+- Worked on Gallery Page.
+## 📂 Project Structure
+.
+├── changes.html # information about Git commands used for staging committing and pushing the files
+├── changes.css # (optional) Custom styles
+├── gallery.html/ # Information about more Git commands
+└── README.md # Documentation
+## 📌 Features
+- Syntax-highlighted code snippets
+- Beginner-friendly explanations
+- Responsive design using **HTML + CSS 
+📸 Preview
+
+Each card in the gallery explains a Git command:
+Clone → git clone <repository_url>
+Stage → git add <files>
+Commit → git commit -m "message"
+Push → git push origin main
