@@ -137,6 +137,12 @@ h2 {
   transform: scale(1.05);
 }
 
+.highlight {
+  background: #fff3cd;
+}
+
+/* Responsive Design */
+
 @media (max-width: 992px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -146,6 +152,10 @@ h2 {
 @media (max-width: 576px) {
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .intro p {
+    text-align: left;
   }
 }
 
@@ -159,8 +169,8 @@ h2 {
   td {
     font-size: 0.9em;
   }
-}
 
-.highlight {
-  background: #fff3cd;
+  .container {
+    padding: 10px;
+  }
 }
