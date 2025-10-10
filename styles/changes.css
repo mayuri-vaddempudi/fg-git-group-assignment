@@ -17,10 +17,15 @@ body {
     margin: 0;
     font-size: 2rem;
 }
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 .container {
     display: flex;
     flex-direction:column;
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
     background: #fff;
     padding: 20px;
@@ -108,6 +113,9 @@ span {
     font-weight: bold;
     font-style: normal;
     font-size: 0.9rem;
+}
+.add-code a {
+    margin-left: 50px;
 }
 
 /* Responsive */
