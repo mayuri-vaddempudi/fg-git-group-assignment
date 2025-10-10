@@ -1,3 +1,55 @@
+# GitHub Group Project
+
+### 📖 About the Project
+
+This is a group project created by 4 members to practice Git and GitHub collaboration.  
+Each member contributed a different page and worked with Git branches and pull requests.
+
+---
+
+### 🧑‍💻 My Contribution (Mayuri Vaddempudi)
+
+- Created the **new repository** and initialized Git.
+- Set up the **project structure** and created required files.
+- Implemented the **Header and Footer** for all pages (for consistent layout).
+- Created the **feature/home** branch and the **develop** branch.
+- Developed the **Home Page (`index.html`)**.
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+Checkout the Home feature branch: git checkout feature/home
+
+🔄 Workflow Followed
+
+Initialize the repository with Git
+
+Create feature branches for each task
+
+Work locally and commit changes
+
+Open Pull Requests into develop
+
+Merge develop → main after testing
+
+👥 Contributors
+
+Mayuri Vaddempudi – Repo setup, feature/home branch, Home page, Header & Footer
+
+Anuhya – Projects & About Us page
+
+Suneetha – Branches page
+
+Sowjanya – Changes page
+
+Suneetha & Sowjanya - Gallery page
+
 🧑‍💻 My Contribution (Anuhya Talamanchi)
 
 # About Us Page Project
@@ -45,60 +97,6 @@ For any inquiries or collaboration, please contact the team at:
 
 ---
 
-# GitHub Group Project
-
-### 📖 About the Project
-
-This is a group project created by 4 members to practice Git and GitHub collaboration.  
-Each member contributed a different page and worked with Git branches and pull requests.
-
----
-
-### 🧑‍💻 My Contribution (Mayuri Vaddempudi)
-
-- Created the **new repository** and initialized Git.
-- Set up the **project structure** and created required files.
-- Implemented the **Header and Footer** for all pages (for consistent layout).
-- Created the **feature/home** branch and the **develop** branch.
-- Developed the **Home Page (`index.html`)**.
-
----
-
-## 🚀 Getting Started
-
-Clone the repository:
-
-````bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-Checkout the Home feature branch: git checkout feature/home
-
-🔄 Workflow Followed
-
-Initialize the repository with Git
-
-Create feature branches for each task
-
-Work locally and commit changes
-
-Open Pull Requests into develop
-
-Merge develop → main after testing
-
-👥 Contributors
-
-Mayuri Vaddempudi – Repo setup, feature/home branch, Home page, Header & Footer
-
-Anuhya – Projects & About Us page
-
-Suneetha – Branches page
-
-Sowjanya – Changes page
-
-Suneetha & Sowjanya - Gallery page
-
-
 🧑‍💻 My Contribution (Suneetha Siddabathuni)
 
 ## 🌿 Git Branching
@@ -133,10 +131,7 @@ project/
 
 1. Download or clone this repository:
 
-   ```bash
-   git clone  https://github.com/mayuri-vaddempudi/fg-git-group-assignment.git
-
-````
+   git clone https://github.com/mayuri-vaddempudi/fg-git-group-assignment.git
 
 2. Navigate to the project folder:
 
@@ -152,6 +147,106 @@ git checkout feature/branches
 -> HTML5 — Page structure
 -> CSS3 — Styling and responsive design
 -> Font Awesome — Icons for social media and visuals
+
+## 📱 Responsive Design
+
+The webpage adapts to different screen sizes:
+
+- Desktop view — full layout with navigation bar
+- Mobile view — collapsible hamburger menu
+
+🧑‍💻 My Contribution (Suneetha & Sowjanya)
+
+Sowjanya - worked on gallery.html
+Suneetha - worked on gallery.css
+
+## 🌿 Git Gallery
+
+**Pages include:**
+
+- `index.html` – Homepage
+- `projects.html` – Projects overview
+- `changes.html` – Git changes guide
+- `branches.html` – Branching details
+- `about.html` – About page
+- `gallery.html` – Quick reference cards for Git commands (this file)
+
+---
+
+## 🧩 Features
+
+✅ Responsive navigation bar with hamburger menu  
+✅ Organized Git command cards in a grid layout  
+✅ Reusable header and footer components  
+✅ Font Awesome icons for visual enhancement  
+✅ CSS separation for structure and design (`common.css` and `gallery.css`)  
+✅ Simple and accessible HTML structure
+
+---
+
+## 📁 Project Structure
+
+📦 git-assignment/
+│
+├── 📁 pages/
+│ ├── index.html
+│ ├── projects.html
+│ ├── changes.html
+│ ├── branches.html
+│ ├── about.html
+│ └── gallery.html ← (This page)
+│
+├── 📁 styles/
+│ ├── common.css
+│ └── gallery.css
+│
+├── 📁 images/
+│ └── github-logo.png
+│
+└── README.md
+
+## ⚙️ Setup & Usage
+
+1. **Clone this repository**
+
+   git clone https://github.com/mayuri-vaddempudi/fg-git-group-assignment.git
+
+Open the project
+
+2. Navigate to the project folder:
+
+cd fg-git-assignment/pages
+Run locally
+
+Simply open gallery.html
+
+Example: Double-click the file or right-click → Open with Browser.
+
+Optional: Use Live Server (VS Code Extension)
+
+Right-click gallery.html → “Open with Live Server” for real-time reloading.
+
+🧠 Learning Goals
+This project helps beginners practice:
+
+Structuring an HTML document properly
+
+Linking external CSS and JS files
+
+Using Git for version control
+
+Organizing assets (images, styles, scripts)
+
+Implementing responsive design
+
+🛠️ Technologies Used
+HTML5 – Semantic page structure
+
+CSS3 – Styling and responsive layout
+
+JavaScript (ES6) – Interactive hamburger menu
+
+Font Awesome – Icons for UI enhancement
 
 ## 📱 Responsive Design
 
@@ -269,3 +364,40 @@ Review others’ pull requests politely and constructively.
 Would you like me to **add your team members ** (like Mauyri, Anuhya, sowjanya and suneetha) into this README too? I can integrate them cleanly into the collaboration section.
 
 ```
+
+🧑‍💻 My contribution (Sowjanya Gangisetty)
+
+This project is a simple webpage that explains the basic Git workflow with examples of commonly used commands:
+
+- **Cloning** a repository
+- **modify files** add or mofify the files.
+- **Staging** files
+- **Committing** changes
+- **Pushing** to a remote repository
+
+It is designed to help beginners quickly understand and practice Git.
+🤝 Contribution
+
+- Created Changes page and styled it.
+- Worked on Gallery Page.
+
+## 📂 Project Structure
+
+.
+├── changes.html # information about Git commands used for staging committing and pushing the files
+├── changes.css # (optional) Custom styles
+├── gallery.html/ # Information about more Git commands
+└── README.md # Documentation
+
+## 📌 Features
+
+- Syntax-highlighted code snippets
+- Beginner-friendly explanations
+- Responsive design using \*\*HTML + CSS
+  📸 Preview
+
+Each card in the gallery explains a Git command:
+Clone → git clone <repository_url>
+Stage → git add <files>
+Commit → git commit -m "message"
+Push → git push origin main
