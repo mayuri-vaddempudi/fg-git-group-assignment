@@ -164,12 +164,6 @@ h2 {
     word-wrap: break-word;
   }
 
-  table,
-  th,
-  td {
-    font-size: 0.9em;
-  }
-
   .container {
     padding: 10px;
   }

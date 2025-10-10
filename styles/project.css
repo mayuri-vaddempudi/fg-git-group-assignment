@@ -5,7 +5,7 @@ main {
 }
 
 .content {
-  padding: 40px 30px;
+  padding: 0 30px;
 }
 
 section {
@@ -13,16 +13,27 @@ section {
 }
 
 h2 {
-  color: #1e3a8a;
+  color: #764ba2;
   font-size: 1.8em;
   margin-bottom: 15px;
   padding-bottom: 10px;
 }
 
 h3 {
-  color: #3b82f6;
+  color: #764ba2;
   font-size: 1.3em;
   margin: 20px 0 10px 0;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+li {
+  line-height: 1.8;
 }
 
 .info-box {
@@ -78,8 +89,9 @@ h3 {
   font-style: italic;
 }
 
-ul {
-  margin: 15px 0 15px 30px;
+.info-box ul {
+  margin: 0;
+  padding: 5px 20px;
 }
 
 li {
@@ -121,4 +133,15 @@ li {
 
 .code-block code {
   color: #61dafb;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  * {
+    word-wrap: break-word;
+  }
+
+  p {
+    text-align: left;
+  }
 }
