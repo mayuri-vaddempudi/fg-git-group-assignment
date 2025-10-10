@@ -37,111 +37,115 @@
         <li>
           <a href="about.html">About Us</a>
         </li>
+        <li>
+          <a href="gallery.html">About Us</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-    <div class="heading">
-      <h1>Git Branches</h1>
-    </div>
+  <div class="heading">
+    <h1>Git Branches</h1>
+  </div>
 
-    <div class="container">
-      <!-- Why Branching is Important -->
-      <section class="why-branching">
-        <h2>Why Branching is Important</h2>
-        <ul>
-          <li>
-            <strong>Isolate Features or Fixes:</strong> Work on new features or
-            bug fixes without affecting the main codebase.
-          </li>
-          <li>
-            <strong>Facilitates Collaboration:</strong> Multiple developers can
-            work on different branches simultaneously.
-          </li>
-          <li>
-            <strong>Supports Experimentation:</strong> Test new ideas safely
-            without risking the main project.
-          </li>
-          <li>
-            <strong>Simplifies Code Review and Testing:</strong> Changes can be
-            reviewed and tested before merging.
-          </li>
-          <li>
-            <strong>Keeps the Project Organized:</strong> Use feature, bugfix,
-            and release branches to structure the project.
-          </li>
-        </ul>
-      </section>
+  <div class="container">
+    <!-- Why Branching is Important -->
+    <section class="why-branching">
+      <h2>Why Branching is Important</h2>
+      <ul>
+        <li>
+          <strong>Isolate Features or Fixes:</strong> Work on new features or
+          bug fixes without affecting the main codebase.
+        </li>
+        <li>
+          <strong>Facilitates Collaboration:</strong> Multiple developers can
+          work on different branches simultaneously.
+        </li>
+        <li>
+          <strong>Supports Experimentation:</strong> Test new ideas safely
+          without risking the main project.
+        </li>
+        <li>
+          <strong>Simplifies Code Review and Testing:</strong> Changes can be
+          reviewed and tested before merging.
+        </li>
+        <li>
+          <strong>Keeps the Project Organized:</strong> Use feature, bugfix,
+          and release branches to structure the project.
+        </li>
+      </ul>
+    </section>
 
-      <!-- Branch List -->
-      <section class="branch-list">
-        <div class="branch">
-          <h3>main / master</h3>
-          <p>
-            The main branch contains the stable, production-ready version of the
-            project.
-          </p>
-        </div>
-        <div class="branch">
-          <h3>development</h3>
-          <p>
-            Used for active development. Features are merged here before going
-            to the main branch.
-          </p>
-        </div>
-        <div class="branch">
-          <h3>feature/login-system</h3>
-          <p>
-            A feature branch for implementing the login system. Merged into
-            development when complete.
-          </p>
-        </div>
-        <div class="branch">
-          <h3>bugfix/navbar-issue</h3>
-          <p>
-            A branch dedicated to fixing the navbar issue. Once fixed, merged
-            into development.
-          </p>
-        </div>
-      </section>
-      <!-- Git Commands -->
-      <section class="git-commands">
-        <h2>Git Commands for Branching</h2>
-        <ul>
-          <li>
-            <strong>Create a new branch:</strong>
-            <code>git branch branch-name</code>
-          </li>
-          <li>
-            <strong>Switch to a branch:</strong>
-            <code>git checkout branch-name</code>
-          </li>
-          <li>
-            <strong>Create and switch in one step:</strong>
-            <code>git checkout -b branch-name</code>
-          </li>
-          <li>
-            <strong>Merge a branch into main:</strong>
-            <code>git checkout main<br />git merge branch-name</code>
-          </li>
-          <li>
-            <strong>Delete a branch locally:</strong>
-            <code>git branch -d branch-name</code>
-          </li>
-          <li>
-            <strong>Delete a branch remotely:</strong>
-            <code>git push origin --delete branch-name</code>
-          </li>
-        </ul>
-      </section>
-   
-   <div class="game-info-box">
+    <!-- Branch List -->
+    <section class="branch-list">
+      <div class="branch">
+        <h3>main / master</h3>
+        <p>
+          The main branch contains the stable, production-ready version of the
+          project.
+        </p>
+      </div>
+      <div class="branch">
+        <h3>development</h3>
+        <p>
+          Used for active development. Features are merged here before going
+          to the main branch.
+        </p>
+      </div>
+      <div class="branch">
+        <h3>feature/login-system</h3>
+        <p>
+          A feature branch for implementing the login system. Merged into
+          development when complete.
+        </p>
+      </div>
+      <div class="branch">
+        <h3>bugfix/navbar-issue</h3>
+        <p>
+          A branch dedicated to fixing the navbar issue. Once fixed, merged
+          into development.
+        </p>
+      </div>
+    </section>
+    <!-- Git Commands -->
+    <section class="git-commands">
+      <h2>Git Commands for Branching</h2>
+      <ul>
+        <li>
+          <strong>Create a new branch:</strong>
+          <code>git branch branch-name</code>
+        </li>
+        <li>
+          <strong>Switch to a branch:</strong>
+          <code>git checkout branch-name</code>
+        </li>
+        <li>
+          <strong>Create and switch in one step:</strong>
+          <code>git checkout -b branch-name</code>
+        </li>
+        <li>
+          <strong>Merge a branch into main:</strong>
+          <code>git checkout main<br />git merge branch-name</code>
+        </li>
+        <li>
+          <strong>Delete a branch locally:</strong>
+          <code>git branch -d branch-name</code>
+        </li>
+        <li>
+          <strong>Delete a branch remotely:</strong>
+          <code>git push origin --delete branch-name</code>
+        </li>
+      </ul>
+    </section>
+
+    <div class="game-info-box">
       <h2>Want to improve your Git skills in a fun and interactive way?</h2>
-      <p>This game lets you practice common Git commands using a visual branching interface. It's perfect for beginners and a great refresher for experienced developers.</p>
+      <p>This game lets you practice common Git commands using a visual branching interface. It's perfect for beginners
+        and a great refresher for experienced developers.</p>
       <p>Click the button below to start playing:</p>
       <a href="https://learngitbranching.js.org/" target="_blank">▶️ Play Git Commands Game</a>
     </div>
- </div>
+  </div>
 
   <footer class="footer">
     <div class="brand">
